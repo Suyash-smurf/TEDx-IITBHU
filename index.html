@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bell Bootstrap 4 Theme</title>
+    <title>TEDxIITBHU</title>
+    <link rel="shortcut icon" href="img/logo1.png" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -35,32 +36,61 @@
     
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+    <!-- <link href="css/timer.css" rel="stylesheet"> -->
+    <!-- <script src="js/timer.js"></script> -->
     
-    <!-- =======================================================
-      Theme Name: Bell
-      Theme URL: https://bootstrapmade.com/bell-free-bootstrap-4-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
+   
   </head>
 
   <body>
+ 
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 22, 2017 16:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "  Days   " + hours + "  Hours   "
+  + minutes + "  Mins   " + seconds + "  Secs   ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
     <!-- Page Content
     ================================================== -->
     <!-- Hero -->
 
-    <section class="hero">
+    <section class="hero img-responsive">
       <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12">
-            <!-- <a class="hero-brand" href="index.html" title="Home"> --><!--img class="img-responsive" alt="TEDxIITBHU" src="img/ted.png"--></a>
-          </div>
+        <div class="row col-md-12">
+          <!-- <div class="col-md-12"> -->
+             <a class="hero-brand" href="#about" title="Home"><img class="img-responsive" alt="TEDxIITBHU" src="img/ted.png"></a>
+          <!-- </div> -->
         </div>
         <div class="col-md-12">
-        <p class="tagline">
-            Date : 22 September 2017
+        <p class="tagline text-center" style="font-size: 1.8em; font-family: Helvetica;">
+             22   September,  2017    |    Swatantrata   Bhawan
           </p>
-        <a class="btn btn-full" href="#about">Explore !</a>
+        <a class="btn btn-full" href="#about">Explore </a>
         </div>
         <!--div class="col-md-12">
           <h1>
@@ -78,7 +108,7 @@
     <!-- /Hero -->
     
   <!-- Header -->
-  <header id="header">
+  <header id="header" style="color: #000">
     <div class="container">
     
       <div id="logo" class="pull-left">
@@ -90,10 +120,10 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li><a href="#about">About Us</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+          <li><a href="#portfolio">Speakers</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <!-- <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="menu-has-children"><a href="#">Drop Down 2</a>
@@ -109,13 +139,13 @@
               <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
       
       <nav class="nav social-nav pull-right hidden-sm-down">
-        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="https://twitter.com/tedxiitbhu" target="_blank"><i class="fa fa-twitter"></i></a> <a href="https://www.facebook.com/TEDxIITBHU/" target="_blank"><i class="fa fa-facebook"></i></a> <!-- <a href="#"><i class="fa fa-linkedin"></i></a> --> <a href="mail.html"><i class="fa fa-envelope"></i></a>
       </nav>
     </div>
   </header><!-- #header -->
@@ -124,16 +154,19 @@
 
     <section class="about" id="about">
       <div class="container text-center">
-        <h2>
-          About TEDxIITBHU
+        <h2 class="text-center" style="color: #b71d11 ">
+          ABOUT TEDxIITBHU
         </h2>
 
-        <p>
+        <p style="font-size: 1.1em">
           TED is a non-profit organization devoted to Ideas Worth Spreading. It started out in 1984 as a conference bringing together people from three worlds: Technology, Entertainment, and Design. This event is under an official license under TED headquartered at New York.<br>
 Since its inception 4 years ago, TEDxIITBHU has grown exponentially, becoming one of the largest university TEDx events in the country! We have not just inspired students of our institute, but also made an impact globally garnering over 7,00,000 views on our TEDx videos on YouTube! With an aim to broadcast ideas worth spreading, TEDxIITBHU has hosted stalwart speakers from all walks of life over the past 4 years, who time and again dazzled the audience with their diverse perspectives and incredible experiences.
-        </p>
+        </p><br><br>
 
-        <div class="row stats-row">
+         <p id="demo" style="font-size: 28px; font-family: sans-serif;"><br></p>
+         
+  
+       <!--  <div class="row stats-row">
           <div class="stats-col text-center col-md-3 col-sm-6">
             <div class="circle">
               <span class="stats-no" data-toggle="counter-up">232</span> Satisfied Customers
@@ -157,26 +190,28 @@ Since its inception 4 years ago, TEDxIITBHU has grown exponentially, becoming on
               <span class="stats-no" data-toggle="counter-up">15</span> Hard Workers
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
+      
     </section>
     <!-- /About -->
     <!-- Parallax -->
 
-    <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg" id="shades1">
+    <div class="block bg-primary block-pd-lg block-bg-overlay text-center theme" data-bg-img="img/web.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg" id="shades1">
       <h2>
-        Welcome to a perfect theme
+        Welcome to a perfect theme <br><br>
+        "Shades"
       </h2>
-
-      <p style="padding: 1%">
+       <br>
+      <p style="padding: 1%; font-size: 1.1em"">
         This edition's theme is called 'Shades'. As the world progresses headlong into the future, change seems to be the only constant. Perhaps it is in our nature to appreciate that change. Dimensions, Perceptions, Verticals: different names to the same shade. The piece is about how the same is viewed differently by people, over time, over space. It is in celebration of this role of contrast that TEDxIITBHU invites you on a journey across the globe, across time, and across lives.
       </p>
-      <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/gadgets.png">
+      <!-- <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="img/theme.jpg"> -->
     </div>
     <!-- /Parallax -->
     <!-- Features -->
 
-    <section class="features" id="features">
+    <!-- <section class="features" id="features">
       <div class="container">
         <h2 class="text-center">
           Features
@@ -310,7 +345,7 @@ Since its inception 4 years ago, TEDxIITBHU has grown exponentially, becoming on
     <!-- /Features -->
     <!-- Call to Action -->
 
-    <section class="cta">
+    <!-- <section class="cta">
       <div class="container">
         <div class="row">
           <div class="col-lg-9 col-sm-12 text-lg-left text-center">
@@ -328,145 +363,199 @@ Since its inception 4 years ago, TEDxIITBHU has grown exponentially, becoming on
           </div>
         </div>
       </div>
-    </section>
+    </section> --> 
     <!-- /Call to Action -->
     <!-- Portfolio -->
 
     <section class="portfolio" id="portfolio">
       <div class="container text-center">
         <h2>
-          Portfolio
+          SPEAKERS 
         </h2>
 
-        <p>
-          Voluptua scripserit per ad, laudem viderer sit ex. Ex alia corrumpit voluptatibus usu, sed unum convenire id. Ut cum nisl moderatius, Per nihil dicant commodo an.
-        </p>
+        <!-- <p style="font-size: 20px; font-family: sans-serif;">
+          Coming Soon !!!
+        </p><br><br><br> -->
       </div>
 
-      <div class="portfolio-grid">
+       <div class="portfolio-grid">
         <div class="row">
           <div class="col-lg-3 col-sm-6 col-xs-12">
             <div class="card card-block">
-              <a href="#"><img alt="" src="img/porf-1.jpg">
+              <a href="#"><img alt="Abha Banerjee" src="img/abha.jpg" data-toggle="modal" data-target="#myModal1">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    The Dude Rockin'
+                    Abha Banerjee
                   </h3>
 
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                     Leadership Author, Motivational Speaker, Growth Activist, Lawyer, Poet
                   </p>
                 </div>
-              </div></a>
+              </div>
+            </div></a>
+            <!-- Trigger the modal with a button -->
+
+
+<!-- Modal -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <!-- <a href="#"> --><img alt="" src="img/ajeet.jpg">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Ajeet Singh
+                  </h3>
+
+                  <p class="card-text">
+                    Founder GURIA, a non-profit fighting Sex Trafficing in Varanasi
+                  </p>
+                </div>
+              </div><!-- </a> -->
             </div>
           </div>
 
           <div class="col-lg-3 col-sm-6 col-xs-12">
             <div class="card card-block">
-              <a href="#"><img alt="" src="img/porf-2.jpg">
+              <!-- <a href="#"> --><img alt="" src="img/antara.jpg">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    The Dude Rockin'
+                    Antara Ganguli
                   </h3>
 
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                     Writer & Gender Specialist at the United Nations
                   </p>
                 </div>
-              </div></a>
+              </div><!-- </a> -->
             </div>
           </div>
 
           <div class="col-lg-3 col-sm-6 col-xs-12">
             <div class="card card-block">
-              <a href="#"><img alt="" src="img/porf-3.jpg">
+              <!-- <a href="#"> --><img alt="" src="img/arvind2.jpg">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    The Dude Rockin'
+                    Arvind Gupta
                   </h3>
 
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                   Tech Entrepreneur behind Digital Revolution of BJP and Indian Politics
                   </p>
                 </div>
-              </div></a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6 col-xs-12">
-            <div class="card card-block">
-              <a href="#"><img alt="" src="img/porf-4.jpg">
-              <div class="portfolio-over">
-                <div>
-                  <h3 class="card-title">
-                    The Dude Rockin'
-                  </h3>
-
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
-                  </p>
-                </div>
-              </div></a>
+              </div><!-- </a> -->
             </div>
           </div>
         </div>
-
         <div class="row">
-          <div class="col-lg-3 col-sm-6 col-xs-12">
+          <div class="col-lg-2 col-sm-0 col-xs-0">
             <div class="card card-block">
-              <a href="#"><img alt="" src="img/porf-5.jpg">
+              <!-- <a href="#"><img alt="" src="img/avik2.jpg"> -->
               <div class="portfolio-over">
-                <div>
+                <!-- <div>
                   <h3 class="card-title">
-                    The Dude Rockin'
+                    Avik Sarkar
                   </h3>
 
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    Head, Data Analytics Cell, Niti Ayog
+                  </p>
+                </div> -->
+              </div><!-- </a> -->
+            </div>
+          </div>
+        <!-- <div class="row"> -->
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <!-- <a href="#"> --><img alt="" src="img/avik2.jpg">
+              <div class="portfolio-over">
+                <div>
+                  <h3 class="card-title">
+                    Avik Sarkar
+                  </h3>
+
+                  <p class="card-text">
+                    Head, Data Analytics Cell, Niti Ayog
                   </p>
                 </div>
-              </div></a>
+              </div><!-- </a> -->
             </div>
           </div>
 
           <div class="col-lg-3 col-sm-6 col-xs-12">
             <div class="card card-block">
-              <a href="#"><img alt="" src="img/porf-6.jpg">
+             <!--  <a href="#"> --><img alt="" src="img/brinda2.jpg">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    The Dude Rockin'
+                    Brinda Miller
                   </h3>
 
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    Famous Artist, Director: Kala Ghoda Festival
                   </p>
                 </div>
-              </div></a>
+              </div><!-- </a> -->
             </div>
           </div>
 
           <div class="col-lg-3 col-sm-6 col-xs-12">
             <div class="card card-block">
-              <a href="#"><img alt="" src="img/porf-7.jpg">
+              <!-- <a href="#"> --><img alt="" src="img/dhairya2.jpg">
               <div class="portfolio-over">
                 <div>
                   <h3 class="card-title">
-                    The Dude Rockin'
+                    Dhairya Pujara
                   </h3>
 
                   <p class="card-text">
-                    Lorem ipsum dolor sit amet, eu sed suas eruditi honestatis.
+                    Founder & CEO for Ycenter - a Global Experiential educational enterprise
                   </p>
                 </div>
+              </div><!-- </a> -->
+            </div>
+          </div>
+           <div class="col-lg-1 col-sm-0 col-xs-0">
+            <div class="card card-block">
+              <!-- <a href="#"><img alt="" src="img/avik2.jpg"> -->
+              <div class="portfolio-over">
+                <!-- <div>
+                  <h3 class="card-title">
+                    Avik Sarkar
+                  </h3>
+
+                  <p class="card-text">
+                    Head, Data Analytics Cell, Niti Ayog
+                  </p>
+                </div> -->
               </div></a>
             </div>
           </div>
-
-          <div class="col-lg-3 col-sm-6 col-xs-12">
+         <!--  <div class="col-lg-3 col-sm-6 col-xs-12">
             <div class="card card-block">
               <a href="#"><img alt="" src="img/porf-8.jpg">
               <div class="portfolio-over">
@@ -481,20 +570,79 @@ Since its inception 4 years ago, TEDxIITBHU has grown exponentially, becoming on
                 </div>
               </div></a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
     <!-- /Portfolio -->
     <!-- Team -->
 
-    <section class="team" id="team">
-      <div class="container">
-        <h2 class="text-center">
-          Meet our team
-        </h2>
+    
 
+    <!-- /Team -->
+    <!-- @component: footer -->
+     <section class="sponsors" id="sponsors">
+      <div class="container gallery-container">
+        
+          <div class="col-md-12 text-center">
+            <h2 class="text-center" style="color: #b71d11;
+  margin-bottom: 25px;">SPONSORS</h2></div>
+             
+        <div class="portfolio-grid">
         <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <!-- <a href="#"> --><img alt="Great Broaster Chicken" src="img/sbi.jpg" style=" width: 100%; margin-bottom: 30px;">
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <!-- <a href="#"> --><img alt="SBI" src="img/bsnl.jpg" style=" width: 100%; margin-bottom: 30px;">
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <!-- <a href="#"> --><img alt="Central Bank of India" src="img/cbi.png" style=" width: 100%; margin-bottom: 30px;">
+              
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <!-- <a href="#"> --><img alt="BSNL" src="img/gbc.jpg" style=" width: 100%; margin-bottom: 30px;">
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <!-- <a href="#"> --><img alt="Roma's Cafe & Diner" src="img/roma.jpg" style=" width: 100%; margin-bottom: 30px;">
+              
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="card card-block">
+              <!-- <a href="#"> --><img alt="Tandoori" src="img/tandoori.jpg" style=" width: 100%; margin-bottom: 30px;">     
+            </div></div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+              <div class="card card-block">
+              <!-- <a href="#"> --><img alt="Big Bazaar" src="img/bb.jpg" style=" width: 100%; margin-bottom: 30px;">
+              
+            </div>
+          </div></div></div></div></div></div>
+   </section>
+      <!--  <section class="team" id="team">
+      <div class="container text-center">
+        <h2 class="text-center">
+          MEET OUR TEAM
+        </h2>
+        <br><br> <p>COMING SOON !!</p>
+            </div>
+              
+            </section> -->
+       <!--  <div class="row">
           <div class="col-sm-3 col-xs-6">
             <div class="card card-block">
               <a href="#"><img alt="" class="team-img" src="img/team-1.jpg">
@@ -589,39 +737,40 @@ Since its inception 4 years ago, TEDxIITBHU has grown exponentially, becoming on
         </div>
       </div>
     </section>
-    <!-- /Team -->
-    <!-- @component: footer -->
+    <hr> -->
 
     <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2 class="section-title">Contact Us</h2>
+            <h2 class="section-title">CONTACT US</h2>
           </div>
         </div>
-        
-        <div class="row">
-          <div class="col-lg-3 offset-lg-2">
+        <br>
+        <div class="row offset-lg-1">
+          <div class="col-lg-4 col-sm-6 col-xs-12">
             <div class="info">
               <div>
                 <i class="fa fa-map-marker"></i>
                 <p>IIT (BHU) Gymkhana<br>Varanasi, India 221005</p>
-              </div>
-              
+              </div></div></div>
+          <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="info">
               <div>
                 <i class="fa fa-envelope"></i>
-                <p>info@example.com</p>
-              </div>
-              
+                <p>tedx@iitbhu.ac.in</p>
+              </div></div></div>
+           <div class="col-lg-4 col-sm-6 col-xs-12">
+            <div class="info">
               <div>
                 <i class="fa fa-phone"></i>
-                <p>+1 5589 55488 55s</p>
-              </div>
+                <p>+91 95172 70715</p>
+              </div></div></div>
               
             </div>
-          </div>
           
-          <div class="col-lg-5">
+          <br>
+          <!-- <div class="col-lg-5">
             <div class="form">
               <div id="sendmessage">Your message has been sent. Thank you!</div>
               <div id="errormessage"></div>
@@ -647,7 +796,7 @@ Since its inception 4 years ago, TEDxIITBHU has grown exponentially, becoming on
             </div>
           </div>
           
-        </div>
+        </div> -->
       </div>
     </section>
       
@@ -658,7 +807,8 @@ Since its inception 4 years ago, TEDxIITBHU has grown exponentially, becoming on
 
             <div class="col-lg-6 col-xs-12 text-lg-left text-center">
               <p class="copyright-text">
-                © TEDxIITBHU
+                 <div id="logo" class="pull-left">
+        <a href = "#about">©<img src="img/ted.png" alt="TEDxIITBHU" title="" style="max-height: 40px"></img></a></div>
               </p>
               <div class="credits">
                   <!-- 
@@ -682,15 +832,15 @@ Since its inception 4 years ago, TEDxIITBHU has grown exponentially, becoming on
                 </li>
 
                 <li class="list-inline-item">
-                  <a href="#features">Features</a>
+                  <a href="#portfolio">Speakers</a>
                 </li>
 
                 <li class="list-inline-item">
-                  <a href="#portfolio">Portfolio</a>
+                  <a href="#team">Our Team</a>
                 </li>
 
-                <li class="list-inline-item">
-                  <a href="#team">Team</a>
+                 <li class="list-inline-item">
+                  <a href="#sponsors">Sponsors</a>
                 </li>
 
                 <li class="list-inline-item">
